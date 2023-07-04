@@ -120,6 +120,7 @@
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
+  filter: brightness(0.8);
 }
 
 /* Seção 4 */
