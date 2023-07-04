@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seção 1 */
+
+.title-section {
+  font-family: 'Anton', sans-serif;
+  background-image: url('/public/por-do-sol.png');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.31); /* Cor de fundo com transparência */
+}
+
+.title-section h1 {
+  z-index: 1;
+  color: #fff;
+  font-size: 72px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Seção 2 */
+
+.cultural {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 25px;
+}
+
+.cultural h2 {
+  padding: 25px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+}
+
+.cultural main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cultural-card {
+  position: relative;
+  margin: 15px;
+  width: 315px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(195, 195, 195, 0.769);
+}
+
+.cultural-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cultural-card:hover img {
+  animation: fadeOut .5s linear forwards;
+}
+
+.cultural-card h3 {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.cultural-card:hover h3 {
+  animation: showText .5s linear forwards;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
