@@ -112,3 +112,11 @@
     opacity: .3;
   }
 }
+
+.gasometro {
+  background-image: url('/public/gasometro.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
