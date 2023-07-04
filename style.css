@@ -89,6 +89,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 
 .cultural-card:hover h3 {
@@ -113,10 +115,23 @@
   }
 }
 
-.gasometro {
-  background-image: url('/public/gasometro.jpg');
+/* Seção 3 */
+
+.carousel-item img {
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  object-fit: cover;
+}
+
+/* Seção 4 */
+
+.know-more {
+  min-height: 40vh;
+  display: flex;
+  padding-inline: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.know-more p {
+  margin: 0;
 }
